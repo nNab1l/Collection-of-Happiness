@@ -1,0 +1,44 @@
+{
+    "games": [
+        {
+            "title": "Ratchet and Clank",
+            "platform": "PS2"
+        },
+        {
+            "title": "Need for Speed underground 2",
+            "platform": "PS2"
+        },
+        {
+            "title": "Naruto ultimate ninja storm 4",
+            "platform": "PS4"
+        },
+        {
+            "title": "Rocket league",
+            "platform": "PS4"
+        },
+        {
+            "title": "Smash bros ultimate",
+            "platform": "NINTENDOSWITCH"
+        },
+        {
+            "title": "Mega man",
+            "platform": "NINTENDOSWITCH"
+        },
+        {
+            "title": "Mario 64",
+            "platform": "N64"
+        },
+        {
+            "title": "Smash bros melee",
+            "platform": "N64"
+        },
+        {
+            "title": "Finals",
+            "platform": "PS5"
+        },
+        {
+            "title": "Ratchet and clank rift apart",
+            "platform": "PS5"
+        }
+    ]
+}

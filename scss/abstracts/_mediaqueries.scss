@@ -1,0 +1,34 @@
+@media screen and (max-width: 62.5rem){
+    .collection__header{
+        height: 100%;
+    }
+
+    .collection__main{
+        flex-direction: column-reverse;
+    }
+
+
+    .collection__article{
+        display: flex;
+        justify-content: center;
+        width: 50rem;
+    }
+
+    .collection__card{
+       
+    }
+
+    .collection__sectionleft{
+        width: 100%;
+        margin-top: 10rem;
+    }
+
+    .collection__cards{
+        width: 100%;
+    }
+
+    .collection__wrapper{
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}

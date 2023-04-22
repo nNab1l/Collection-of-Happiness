@@ -1,0 +1,109 @@
+.collection__main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+body{
+    height: 90vh;
+}
+
+.episode__preview{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.collection__sectionleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.collection__sectionright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.collection__article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160rem;
+    
+}
+
+.collection__cards{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 45rem;
+ 
+}
+
+.collection__card{
+    width: 20rem;
+    height: 20rem;
+    background: green;
+    position: relative;
+}
+
+.collection__p--titel{
+    position: absolute;
+    bottom: 0.8rem;
+    left: 1.6rem;
+}
+
+.collection__p--datum{
+    position: absolute;
+    top: 0.8rem;
+    right: 1.6rem;
+}
+
+.collection__figure{
+    position: relative;
+    width: 90%;
+    height: 20rem;
+    background: gray;
+}
+
+.collection__episode{
+  width: 100%;
+}
+
+.collection__paragraph{
+    margin-top: 2rem;
+}
+
+button{
+    background: none;
+    border: none;
+    background: black;
+    color: white;
+    width: 25rem;
+    height: 4rem;
+}
+
+
+.collection__wrapper{
+    display: flex;
+    margin-top: 8rem;
+    gap: 20rem;
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   
+}

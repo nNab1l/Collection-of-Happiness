@@ -1,0 +1,16 @@
+.collection__header{
+    width: 100%;
+}
+
+.collection__list{
+    margin-top: 4rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 3rem;
+
+    &--first{
+        font-size: 5rem;
+    }
+}
