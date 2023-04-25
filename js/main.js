@@ -40,7 +40,7 @@ class header{
         this.logolistElement.classList = "collection__listitem--first";
 
         this.logoElement = document.createElement("i");
-        this.logoElement.classList = "collection__logo";
+        this.logoElement.classList = "fa-regular fa-face-smile-beam collection__logo";
 
         this.titleElement = document.createElement("li");
         this.titleElement.classList = "collection__listitem--second";
@@ -50,6 +50,7 @@ class header{
     render(){
         this.headerElement.appendChild(this.listElement);
         this.listElement.appendChild(this.logolistElement);
+        this.listElement.appendChild(this.logoElement);
         this.listElement.appendChild(this.titleElement);
         this.logolistElement.appendChild(this.logoElement);
 
@@ -197,7 +198,7 @@ class rightpanel{
         this.rightDate.innerText = data.date;
         this.rightsum.innerText = data.summary;
         this.audio.innerText = "audio";
-        this.source.innerText = "source";
+        this.source.innerText = "source >";
         this.audio.src = data.audio;
         this.source.href = data.source;
 
@@ -222,13 +223,40 @@ class rightpanel{
 }
 
 
+class footer{
+    footerElement;
+    footerPElement;
+    placeToRenderFooter;
+
+    constructor(placeToRenderFooter){
+        this.placeToRenderFooter = document.getElementsByTagName(placeToRenderFooter)[0];
+
+        this.footerElement = document.createElement("footer");
+        this.footerElement.classList = "footer";
+
+        
+        this.footerPElement = document.createElement("p");
+        this.footerPElement.classList = "footer__p";
+        this.footerPElement.innerText = "Gemaakt door Nabil Salimi SD2D MediaCollege"
+    }
+
+    render(){
+        this.footerElement.appendChild(this.footerPElement);
+
+        this.placeToRenderFooter.appendChild(this.footerElement);
+    }
+}
+
+
 
 class App{
     header;
+    footer;
     main;
 
     constructor(){
         this.header = new header("body");
+        this.footer = new footer("body");
 
         this.Api = new Api("./data/data.json");
         this.Api
@@ -238,6 +266,7 @@ class App{
                 this.main.makeCardsFromData(data);
                 this.header.render();
                 this.main.render();
+                this.footer.render();
             });
 
         
